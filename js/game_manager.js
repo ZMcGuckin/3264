@@ -68,7 +68,7 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.9 ? 3 : 3264;
+    var value = Math.random() < 0.9 ? 3 : 6;
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
@@ -295,18 +295,19 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
           var other  = self.grid.cellContent(cell);
 
-          if (other && other.value === tile.value && tile.value === !48) 
+          if (other && other.value === tile.value ) 
 		  {
+		  //&& tile.value === !48
             return true; // These two tiles can be merged
           }
-		  else if (other && other.value === 3 && tile.value === 48) 
-		  {
-            return true; // These two tiles can be merged
-          }
-		  else if (other && other.value === 48 && tile.value === 3) 
-		  {
-            return true; // These two tiles can be merged
-          }
+		  //else if (other && other.value === 3 && tile.value === 48) 
+		  //{
+          //  return true; // These two tiles can be merged
+          //}
+		  //else if (other && other.value === 48 && tile.value === 3) 
+		  //{
+          //  return true; // These two tiles can be merged
+          //}
         }
       }
     }
