@@ -265,6 +265,7 @@ hr {
     .game-message.game-won a.keep-playing-button {
       display: inline-block; }
   .game-message.game-won, .game-message.game-over {
+	color: #0E0C0C;
     display: block; }
     .game-message.game-won p, .game-message.game-over p {
       -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
