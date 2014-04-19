@@ -169,6 +169,10 @@ GameManager.prototype.move = function (direction) {
 					// Update the score
 					self.score += merged.value;
 				}
+				else 
+				{
+					self.moveTile(tile, positions.farthest);
+				}
 			}
 			else if(tile.value === 3 && next.value === 48)
 			{
@@ -295,7 +299,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
           var other  = self.grid.cellContent(cell);
 
-          if (other && other.value === tile.value ) 
+          if (other && other.value === tile.value && !(other.value === 48 && tile.value ===48)) 
 		  {
 		  //&& tile.value === !48
             return true; // These two tiles can be merged
