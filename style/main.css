@@ -49,11 +49,11 @@ input {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 45px;
   font-weight: bold;
   margin: 0;
   display: block;
-  float: left; }
+  float: right; }
 
 @-webkit-keyframes move-up {
   0% {
@@ -86,14 +86,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #C9DD32;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
-  color: white;
+  color: black;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -105,7 +105,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: black; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
