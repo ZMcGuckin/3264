@@ -304,6 +304,10 @@ GameManager.prototype.tileMatchesAvailable = function () {
 		  //&& tile.value === !48
             return true; // These two tiles can be merged
           }
+		  if (other && other.value === 48 && tile.value === 3)
+		  {
+			return true;
+		  }
 		  //else if (other && other.value === 3 && tile.value === 48) 
 		  //{
           //  return true; // These two tiles can be merged
