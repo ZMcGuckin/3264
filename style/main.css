@@ -587,7 +587,7 @@ hr {
   cursor: pointer;
   display: block;
   text-align: center;
-  float: right; }
+  float: left; }
 
 .game-explanation {
   margin-top: 50px; }
