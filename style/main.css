@@ -392,7 +392,7 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: .005px; }
+    font-size: 55px; }
   .tile.tile-3 .tile-inner {
     background: #27E25F;
 	background: url('../tile-sets/hig.jpg');
